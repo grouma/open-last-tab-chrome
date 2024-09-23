@@ -1,0 +1,17 @@
+{
+  "description": {
+    "message": "Circule entre as últimas abas acessadas, através de atalho (Alt+Q)."
+  },
+  "alt_switch_fast_description": {
+    "message": "Alterne rapidamente entre as 2 últimas abas. (Sugestão: Alt+Q)"
+  },
+  "alt_switch_slow_backward_description": {
+    "message": "Alterne para trás (Sugestão: Alt+S)"
+  },
+  "alt_switch_slow_forward_description": {
+    "message": "Alterne para frente (Sugestão: Alt+Shift+S)"
+  },
+  "title": {
+    "message": "Abra a última Aba"
+  }
+}
