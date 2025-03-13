@@ -178,7 +178,8 @@ chrome.windows.onFocusChanged.addListener(function (windowId) {
             }
         });
     }
-});
+
+}, { windowTypes: ['normal'] });
 
 var trackActiveTab = function (tabId) {
     if (!slowSwitchOngoing && !fastSwitchOngoing) {
@@ -268,7 +269,7 @@ var initialize = function () {
             }
 
             let allTabs = new Set();
-            chrome.windows.getAll({ populate: true }, function (windows) {
+            chrome.windows.getAll({ populate: true, windowTypes: ['normal'] }, function (windows) {
                 windows.forEach(function (window) {
                     window.tabs.forEach(function (tab) {
                         allTabs.add(tab.id);
